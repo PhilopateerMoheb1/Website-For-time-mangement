@@ -1,0 +1,65 @@
+.container{
+  display: grid;
+  grid-gap: 5 px;
+  grid-template-columns: repeat(5,1fr);
+  grid-auto-rows:repeat(5,1fr);
+  grid-template-areas:
+  "h1 h1 h1 h1 h1"
+  "n n n n n"
+  "c c c c c"
+  "c c c c c"
+  "c c c c c"
+  "c c c c c"
+  "c c c c c"
+  "c c c c c"
+  "f f f f f"
+}
+img{
+  object-fit: cover;
+}
+.nav a {
+  float: left;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+  text-decoration: none;
+  display: inline-block;
+   border: 1px solid black;
+   color: black;
+
+}
+p{
+  color: white
+}
+.Box{
+  text-align: center;
+
+}
+.head{
+  grid-area: h1;
+  background:black;
+}
+p a{
+  text-weight:bold;
+}
+.footer{
+  grid-area: f;
+
+  background:#FFD1A9;
+}
+.content{
+  grid-area: c;
+  background:#FFD1A9;
+  color: black;
+
+}
+.active{
+  background: white;
+}
+.nav{
+  grid-area: n;
+  background:#FFD1A9;
+}
